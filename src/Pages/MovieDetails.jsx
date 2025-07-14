@@ -1,6 +1,7 @@
-import React from 'react';
+
 import { useParams, useNavigate } from 'react-router-dom';
-import movies from '../data/movies';
+import movies from '../data/Movies.jsx';
+console.log("imported movies0" , movies)
 
 const MovieDetails = () => {
   const { id } = useParams();
