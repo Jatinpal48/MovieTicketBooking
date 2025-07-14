@@ -1,0 +1,143 @@
+body{
+    background-color: #000080;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 20px;
+}
+.movie-card {
+    background-color: #184b91;
+    border-radius: 10px;
+    color: #ffffff; 
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #241086;
+}
+.movie-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.movie-card h2 {
+    font-size: 1.5em; 
+    margin: 10px;
+}
+.movie-card p {
+    font-size: 1em;
+    margin: 10px;
+    color: #cccccc; 
+}
+.movie-card a {
+    display: block;
+    text-align: center;
+    background-color: #ff4081;    
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px; 
+    transition: background-color 0.3s;
+}
+
+.movie-card a:hover {
+    background-color: #e91e63; 
+}
+@media (max-width: 600px) {
+    .movie-card {
+        width: 100%;
+    }
+    .movie-list {
+        flex-direction: column;   
+        align-items: center;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .movie-card {
+        width: 45%;   
+        margin: 10px;
+    }   
+    .movie-list {
+        flex-direction: row;   
+        justify-content: center;
+    }
+}
+@media (min-width: 901px) {
+    .movie-card { 
+        width: 30%;   
+        margin: 10px;
+    }
+    .movie-list { 
+        flex-direction: row;   
+        justify-content: center;
+    }
+}
+@media (min-width: 1200px) {
+    .movie-card {
+        width: 25%;   
+        margin: 10px;   
+    }
+    .movie-list {
+        flex-direction: row;   
+        justify-content: center;
+    } 
+    .movie-card h2 {
+      font-size: 1.8em; 
+    }
+    .movie-card.selected h2 {
+      font-weight: bold;
+      
+    }
+    .movie-card p {
+        font-size: 1.5em; 
+    }
+    .movie-card a {
+        font-size: 1.5em; 
+    }
+}
+@media (min-width: 1600px) {
+    .movie-card {
+        width: 20%;
+        margin: 10px;     
+    }
+    .movie-list {
+        flex-direction: row;   
+        justify-content: center;
+    }
+    .movie-card h2 {
+        font-size: 2em; 
+    }
+    .movie-card p {     
+        font-size: 1.2em; 
+    }
+    .movie-card a {
+        font-size: 1.2em;
+    }
+} 
+button{
+    background-color: #0fc4e4;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+input{
+    padding: 10px;
+    border: 1px solid #bceaff;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
